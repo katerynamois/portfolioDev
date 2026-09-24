@@ -272,7 +272,79 @@ h1, h2, h3 {
   &:hover { color: #a93616; }
 }
 
+// Om mig
+.about {
+  background: #d9ebf6;
+  padding-block: 88px;
+  border-block: 1px solid #c2d8e6;
+
+  p { color: #3e5363; font-size: 15px; max-width: 58ch; }
+}
+
+.about .about-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #286d9b;
+  margin-bottom: 14px;
+}
+
+.about-title {
+  font-size: 44px;
+  line-height: 1.05;
+  color: #1b4666;
+  margin-bottom: 28px;
+}
+
+.about .about-lead { font-size: 19px; line-height: 1.5; color: #1b4666; }
+
+.about .about-personal {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #aac9da;
+  font-style: italic;
+}
+
+.about-card {
+  border-color: #c2d8e6;
+  border-radius: 8px;
+
+  .card-body { padding: 32px 32px 8px; }
+}
+
+.about-facts div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 12px;
+  border-bottom: 1px solid #e6eef3;
+  font-size: 14px;
+}
+
+.about-facts dt { font-weight: 400; color: #50545a; }
+.about-facts dd { margin: 0; font-weight: 700; text-align: right; }
+
+.skills .list-group-item {
+  padding: 20px 0;
+  border-color: #e6eef3;
+
+  h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #286d9b;
+    margin-bottom: 6px;
+  }
+
+  p { margin: 0; color: $body-color; }
+}
+
+.skills .list-group-item:last-child { border-bottom: 0; }
+
 @include media-breakpoint-down(md) {
+  .about-title { font-size: 36px; }
   .section-title { font-size: 34px; }
   .case-visual { padding: 26px; .case-name { font-size: 52px; } }
   .case-body { padding: 30px; }
@@ -283,4 +355,8 @@ h1, h2, h3 {
   .section-title { font-size: 30px; }
   .case-visual { min-height: 232px; padding: 24px; .case-name { font-size: 46px; } }
   .case-body { padding: 26px 24px; }
+  .about { padding-block: 48px; }
+  .about-title { font-size: 30px; }
+  .about .about-lead { font-size: 17px; }
+  .about-card .card-body { padding: 24px 20px 4px; }
 }
