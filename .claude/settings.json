@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m http.server 8000)",
+      "Bash(curl -s http://localhost:8000/index.html)",
+      "Bash(pkill -f chromium)",
+      "Bash(chromium-cli http://localhost:8000/index.html --screenshot=/tmp/portfolio-screenshot.png --window-size=1440,900 --timeout=5000)",
+      "Read(//tmp/**)",
+      "Read(//c/Users/kater/AppData/Local/Temp/**)"
+    ]
+  }
+}

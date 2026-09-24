@@ -1,0 +1,4 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="100" fill="#E8622C"/>
+  <text x="100" y="125" font-family="Anton, sans-serif" font-size="72" font-weight="600" text-anchor="middle" fill="#e7e1df">KM</text>
+</svg>

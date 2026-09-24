@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kateryna Moiseyenko, frontend- og webudvikler med UX/UI-baggrund. Se mine projekter med Vue, JavaScript og MySQL. Søger praktik i 2027.">
+<title>Kateryna — webudvikler</title>
+<link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style/style.css">
+<link rel="stylesheet" href="Style/index.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Gå til indhold</a>
+
+<header>
+  <div class="stripe"></div>
+  <nav class="wrap" aria-label="Hovednavigation">
+    <a class="brand" href="index.html" aria-label="Kateryna, forsiden"><span class="iris" aria-hidden="true"></span> Kateryna</a>
+    <div class="navlinks">
+      <a href="#arbejde">Projekter</a>
+      <a href="#om">Om mig</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <button class="burger" id="burgerBtn" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="mobileNav" hidden>
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobilnavigation" hidden>
+    <a href="#arbejde">Projekter</a>
+    <a href="#om">Om mig</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow-line"><span class="dot"></span> Søger praktik 12. jan. – 24. marts 2027</div>
+      <p class="hero-name">Kateryna Moiseyenko</p>
+      <h1 class="hero-title" id="hero-title">Frontend- og <span class="accent">webudvikler</span></h1>
+      <p class="hero-role">Med en baggrund i UX/UI.</p>
+      <p class="hero-sub">Jeg bygger brugervenlige webapplikationer fra design til fungerende kode — med fokus på Vue, JavaScript og solide backend-løsninger.</p>
+      <div class="hero-meta">
+        <span class="chip"><span class="swatch" style="background:var(--teal)"></span> Vue</span>
+        <span class="chip"><span class="swatch" style="background:var(--violet)"></span> Node / Express</span>
+        <span class="chip"><span class="swatch" style="background:var(--magenta)"></span> MySQL</span>
+        <span class="chip"><span class="swatch" style="background:var(--orange)"></span> REST API</span>
+        <span class="chip"><span class="swatch" style="background:var(--yellow)"></span> Figma</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#arbejde">Se mine projekter</a>
+        <a class="btn btn-ghost" href="#kontakt">Kontakt mig</a>
+      </div>
+    </div>
+    <div class="portrait-wrap">
+      <div class="portrait">
+        <img src="public/media/images/praktik%20(2).png" alt="Kateryna med computer og skitsebog, omgivet af illustrationer af kode og UX/UI" width="1254" height="1254" fetchpriority="high">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="arbejde" aria-labelledby="projects-title">
+  <div class="wrap">
+    <div class="section-head" id="projects">
+      <h2 id="projects-title">Udvalgte projekter</h2>
+      <p>Tre projekter med fokus på brugeroplevelse, interaktion og vejen fra design til fungerende kode.</p>
+    </div>
+
+    <article class="case case1">
+      <div class="case-visual">
+        <span class="tag">Hovedprojekt</span>
+        <span class="case-name" aria-hidden="true">Naboting</span>
+        <span class="num">01</span>
+      </div>
+      <div class="case-body">
+        <h3>Naboting</h3>
+        <div class="role">Fullstack-udvikler · eksamensprojekt</div>
+        <p>En lokal låne- og delingsplatform for naboer. Bygget fra database og REST API til et komplet login- og låneflow i brugerfladen.</p>
+        <div class="stacklist">
+          <span>Vue</span><span>Vuetify</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>REST API</span>
+        </div>
+        <div class="case-links">
+          <a href="naboting.html">Se projektet</a>
+          <a href="https://github.com/katerynamois/naboting-eksamen">GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="case case2">
+      <div class="case-visual">
+        <span class="tag">UX-proces</span>
+        <span class="case-name" aria-hidden="true">Cykel Grøn</span>
+        <span class="num">02</span>
+      </div>
+      <div class="case-body">
+        <h3>CykelGrøn</h3>
+        <div class="role">UX/UI-design → implementering</div>
+        <p>Designbeslutninger, brugertests og research bag et bæredygtigt cykel-koncept — og hvad der blev kodet af det selv.</p>
+        <div class="stacklist">
+          <span>Figma</span><span>Brugertest</span><span>HTML/CSS</span>
+        </div>
+        <div class="case-links">
+          <a href="https://cykelgront.katemois.com/index.html">Se case</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="case case3">
+      <div class="case-visual">
+        <span class="tag">Interaktiv frontend</span>
+        <span class="case-name" aria-hidden="true">Let's play</span>
+        <span class="num">03</span>
+      </div>
+      <div class="case-body">
+        <h3>Spil Interface</h3>
+        <div class="role">Frontend / JavaScript</div>
+        <p>Et interaktivt, JavaScript-baseret interface med fokus på dynamiske brugeroplevelser, responsivt design og samspillet mellem bruger og kode.</p>
+        <div class="stacklist">
+          <span>JavaScript</span><span>HTML/CSS</span><span>Responsive design</span>
+        </div>
+        <div class="case-links">
+          <a href="https://valgfag.katemois.com/index.html">Prøv projektet</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="om" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <div>
+      <h2 id="about-title">Design og kode,<br>samme håndværk</h2>
+      <p>
+                        Jeg hedder Kateryna Moiseyenko og er uddannet multimediedesigner med erfaring inden for visuelt design, illustration og brugeroplevelse.
+                    </p>
+                    <p>
+                        I dag lærer jeg en top-up i webudvikling, hvor jeg arbejder med React, Vue, JavaScript, HTML, CSS og PHP. Mit primære fokus er frontend-udvikling, fordi jeg her kan kombinere teknisk funktionalitet med min forståelse for design og brugernes behov.
+                    </p>
+                    <p>
+                        Jeg arbejder struktureret med hele processen fra idé og prototype til færdig digital løsning. Min baggrund i Adobe Illustrator og UX/UI giver mig et stærkt visuelt blik, mens webudviklingen har styrket min evne til at omsætte design til responsive og brugervenlige interfaces.
+                    </p>
+                    <p>
+                        Når jeg ikke studerer, holder jeg af at læse og gå ture i naturen.
+                    </p>
+                    <p>
+                        Jeg søger en fagligt relevant praktikplads fra 12. januar til 24. marts 2027, hvor jeg kan udvikle mine frontend-kompetencer, bidrage til konkrete projekter og få sparring fra erfarne kolleger.
+                    </p>
+      <p>Jeg er åben for remote, hybrid eller fysisk praktik, og arbejder gerne tæt sammen med et team, der vil lære fra hinanden.</p>
+      <div class="taglist">
+        <span>Vue</span><span>JavaScript</span><span>HTML/CSS</span><span>Node.js</span><span>MySQL</span><span>Figma</span><span>UX/UI</span>
+      </div>
+      <div class="skills-highlight">
+        <div class="skill-chip vue">
+          <svg class="logo" viewBox="0 0 261.76 226.69" xmlns="http://www.w3.org/2000/svg"><path fill="#42b983" d="M161.096.001l-30.224 52.359h60.448zm-59.956 0L29.4 175.633h176.32L101.14 52.36 75.001 0zm13.669 52.359L154.56 175.633H0L75.001 52.36z"/></svg>
+          Vue
+        </div>
+        <div class="skill-chip mysql">
+          <svg class="logo" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="mysql-grad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#00758f;stop-opacity:1" /><stop offset="100%" style="stop-color:#005a7e;stop-opacity:1" /></linearGradient></defs><circle cx="128" cy="128" r="128" fill="url(#mysql-grad)"/><text x="128" y="145" font-size="90" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">M</text></svg>
+          MySQL
+        </div>
+        <div class="skill-chip figma">
+          <svg class="logo" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg"><path fill="#F24E1E" d="M19 28.5a9.5 9.5 0 1 1 0-19 9.5 9.5 0 0 1 0 19z"/><path fill="#0ACF83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5A9.5 9.5 0 0 1 9.5 57 9.5 9.5 0 0 1 0 47.5z"/><path fill="#A259FF" d="M19 0v19h9.5A9.5 9.5 0 0 0 38 9.5 9.5 9.5 0 0 0 28.5 0H19z"/><path fill="#F6A623" d="M19 19v19h9.5A9.5 9.5 0 0 0 38 28.5 9.5 9.5 0 0 0 28.5 19H19z"/><path fill="#0ACF83" d="M0 28.5A9.5 9.5 0 0 1 9.5 19H19v19H9.5A9.5 9.5 0 0 1 0 28.5z"/></svg>
+          Figma
+        </div>
+      </div>
+    </div>
+    <div class="skills-summary">
+      <div><h3>Frontend</h3><p>Vue, React, JavaScript, HTML, CSS, Vuetify og Vite</p></div>
+      <div><h3>Backend</h3><p>Node.js, Express, MySQL, PHP og REST API</p></div>
+      <div><h3>Design & proces</h3><p>UX/UI, Figma, prototyping og Git / GitHub</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <h2>Lad os tage en snak om en praktikplads.</h2>
+      <div class="footer-links">
+        <a href="mailto:kateryna88@hotmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/kateryna-moiseyenko-b93a69b6/">LinkedIn</a>
+        <a href="https://github.com/katerynamois">GitHub</a>
+      </div>
+    </div>
+    <div class="fineprint"><span>&copy; Kateryna Moiseyenko</span><a href="#top">Til toppen</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
