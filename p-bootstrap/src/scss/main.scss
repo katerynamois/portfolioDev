@@ -343,6 +343,36 @@ h1, h2, h3 {
 
 .skills .list-group-item:last-child { border-bottom: 0; }
 
+// Kontakt / footer
+.footer {
+  background: #f3b5a0;
+  padding-block: 64px 28px;
+}
+
+.footer-title { font-size: 40px; max-width: 19ch; margin: 0; }
+
+.footer-links a {
+  font-weight: 600;
+  color: $body-color;
+  text-decoration: none;
+  padding-block: 8px;
+  border-bottom: 1px solid currentColor;
+
+  &:hover { color: #a93616; }
+}
+
+.fineprint {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid $border-color;
+  font-size: 12px;
+  color: #493f3d;
+
+  a { color: inherit; text-underline-offset: 4px; }
+}
+
+html { scroll-padding-top: 96px; }
+
 @include media-breakpoint-down(md) {
   .about-title { font-size: 36px; }
   .section-title { font-size: 34px; }
@@ -359,4 +389,6 @@ h1, h2, h3 {
   .about-title { font-size: 30px; }
   .about .about-lead { font-size: 17px; }
   .about-card .card-body { padding: 24px 20px 4px; }
+  .footer { padding-block: 44px 24px; }
+  .footer-title { font-size: 34px; }
 }
