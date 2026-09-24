@@ -23,7 +23,20 @@
       <a href="#om" class="hover:text-accent">Om mig</a>
       <a href="#kontakt" class="hover:text-accent">Kontakt</a>
     </div>
+
+    <button id="burgerBtn" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Åbn menu"
+            class="group md:hidden size-11 flex flex-col items-center justify-center gap-1.5">
+      <span class="block w-6 h-0.5 bg-ink transition duration-200 group-aria-expanded:translate-y-2 group-aria-expanded:rotate-45"></span>
+      <span class="block w-6 h-0.5 bg-ink transition duration-200 group-aria-expanded:opacity-0"></span>
+      <span class="block w-6 h-0.5 bg-ink transition duration-200 group-aria-expanded:-translate-y-2 group-aria-expanded:-rotate-45"></span>
+    </button>
   </nav>
+
+  <div id="mobileNav" class="hidden md:hidden absolute top-full inset-x-0 bg-header border-y border-line flex-col">
+    <a href="#projekter" class="px-8 py-4 text-[1.05rem] border-b border-line">Projekter</a>
+    <a href="#om" class="px-8 py-4 text-[1.05rem] border-b border-line">Om mig</a>
+    <a href="#kontakt" class="px-8 py-4 text-[1.05rem]">Kontakt</a>
+  </div>
 </header>
 
     <script type="module" src="/src/main.js"></script>
