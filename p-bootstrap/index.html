@@ -9,8 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1 class="text-primary">Bootstrap virker</h1>
-    <button class="btn btn-primary">Test</button>
+    <header class="sticky-top border-bottom">
+  <nav class="navbar navbar-expand-md" aria-label="Hovednavigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <span class="iris" aria-hidden="true"></span> Kateryna
+      </a>
+
+      <button class="navbar-toggler burger collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Åbn menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-md-4">
+          <li class="nav-item"><a class="nav-link" href="#projekter">Projekter</a></li>
+          <li class="nav-item"><a class="nav-link" href="#om">Om mig</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="projekter" style="height:100vh">Projekter</section>
+</main>
+
 
     <script type="module" src="/src/main.js"></script>
   </body>

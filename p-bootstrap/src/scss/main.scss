@@ -1,7 +1,117 @@
+// Farver og typografi
 $primary: #14213D;
 $body-bg: #F6EEE1;
 $body-color: #14213D;
 $font-family-base: 'DM Sans', sans-serif;
 $border-radius: 4px;
+$border-color: rgba(20, 33, 61, 0.14);
+
+// Samme breakpoint som originalen (860px): md starter ved 861px
+$grid-breakpoints: (xs: 0, sm: 576px, md: 861px, lg: 992px, xl: 1200px, xxl: 1400px);
+
+// Container: max 1244px bred, 32px luft i hver side
+$container-max-widths: (sm: 1244px, md: 1244px, lg: 1244px, xl: 1244px, xxl: 1244px);
+$container-padding-x: 4rem;
+
+// Navbar
+$navbar-padding-y: 14px;
+$navbar-light-color: #50545a;
+$navbar-light-hover-color: #a93616;
+$navbar-light-active-color: #a93616;
+$navbar-light-brand-color: $body-color;
+$navbar-light-brand-hover-color: $body-color;
 
 @import "bootstrap/scss/bootstrap";
+
+$header-bg: #f7f4ee;
+
+header {
+  background: $header-bg;
+  border-top: 6px solid #E8622C;
+}
+
+.navbar { min-height: 74px; }
+
+.navbar-brand {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.iris {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #E8622C;
+  position: relative;
+  flex-shrink: 0;
+  &::after {
+    content: "";
+    position: absolute; inset: 8px;
+    border-radius: 50%;
+    background: $header-bg;
+  }
+}
+
+.nav-link { font-size: 0.95rem; font-weight: 500; }
+
+@include media-breakpoint-up(md) {
+  .navbar-nav { gap: 32px; }
+  .navbar-expand-md .navbar-nav .nav-link { padding-inline: 0; }
+}
+
+// Burger: tre streger, der bliver til et X
+.burger {
+  border: none;
+  width: 44px; height: 44px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  &:focus { box-shadow: none; }
+  &:focus-visible { outline: 3px solid #1165a0; outline-offset: 5px; }
+
+  span {
+    display: block;
+    width: 24px; height: 2px;
+    background: $body-color;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+
+  // Bootstrap fjerner .collapsed, når menuen er åben
+  &:not(.collapsed) {
+    span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    span:nth-child(2) { opacity: 0; }
+    span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+  }
+}
+
+// Mobilmenu i fuld bredde under headeren
+@include media-breakpoint-down(md) {
+  .container { padding-inline: 20px; }
+  .navbar { min-height: 68px; }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: $header-bg;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 16px 32px;
+    font-size: 1.05rem;
+    color: $body-color;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .nav-item:last-child .nav-link { border-bottom: none; }
+}
+
+h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
