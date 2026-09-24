@@ -61,15 +61,22 @@ h1.hero-title .accent { display: block; color: #a93616; }
 .case-links { flex-wrap: wrap; gap: 16px 24px; font-size: 14px; }
 .case-links a:hover { color: #a93616; }
 
-.about { padding-block: 76px; background: #d9ebf6; border-color: #c2d8e6; }
-.about h2 { font-size: 36px; }
-.about p { color: #3e5363; font-size: 15px; }
-.about-grid { gap: 72px; }
-.taglist span { background: #c8dfe9; border-radius: 4px; }
-.skill-chip { border-radius: 4px; }
-.skills-summary > div { padding-block: 24px; border-top: 1px solid #aac9da; }
-.skills-summary h3 { font-family: 'DM Sans', sans-serif; font-size: 19px; font-weight: 700; text-transform: none; margin: 0 0 8px; }
-.skills-summary p { margin: 0; }
+.about { padding-block: 88px; background: #d9ebf6; border-color: #c2d8e6; }
+.about-grid { grid-template-columns: 1.15fr 1fr; gap: 72px; align-items: start; }
+.about .about-eyebrow { margin: 0 0 14px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #286d9b; }
+.about h2 { font-size: 44px; line-height: 1.05; color: #1b4666; margin-bottom: 28px; }
+.about p { color: #3e5363; font-size: 15px; max-width: 58ch; }
+.about .about-lead { font-size: 19px; line-height: 1.5; color: #1b4666; }
+.about .about-personal { margin-top: 24px; padding-top: 20px; border-top: 1px solid #aac9da; font-style: italic; }
+.about-card { background: #fff; border: 1px solid #c2d8e6; border-radius: 8px; padding: 32px 32px 8px; }
+.about-facts { margin: 0 0 8px; }
+.about-facts div { display: flex; justify-content: space-between; gap: 16px; padding-block: 12px; border-bottom: 1px solid #e6eef3; font-size: 14px; }
+.about-facts dt { color: #50545a; }
+.about-facts dd { margin: 0; font-weight: 700; color: var(--ink); text-align: right; }
+.skills-summary > div { padding-block: 20px; border-top: 1px solid #e6eef3; }
+.skills-summary > div:first-child { border-top: none; }
+.skills-summary h3 { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #286d9b; margin: 0 0 6px; }
+.skills-summary p { margin: 0; color: var(--ink); font-size: 15px; }
 .about-links { display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; font-weight: 600; }
 .about-links a { text-underline-offset: 5px; }
 footer { background: #f3b5a0; padding-block: 64px 28px; }
@@ -109,8 +116,8 @@ footer h2 { font-size: 40px; max-width: 19ch; }
     .case:nth-of-type(even) .case-visual { order: 0; }
     .case-name { font-size: 52px; }
     .case-visual { padding: 26px; }
-    .about-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
-    .about h2 { font-size: 30px; }
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .about h2 { font-size: 36px; }
 }
 
 @media (max-width: 600px) {
@@ -141,8 +148,8 @@ footer h2 { font-size: 40px; max-width: 19ch; }
     .about-grid { grid-template-columns: 1fr; gap: 32px; }
     .about h2 { font-size: 30px; }
     .about p { font-size: 14px; }
-    .skills-summary > div { padding-block: 20px; }
-    .skill-chip { padding: 8px 12px; font-size: 13px; }
+    .about .about-lead { font-size: 17px; }
+    .about-card { padding: 24px 20px 4px; }
     footer { padding-block: 44px 24px; }
     footer h2 { font-size: 34px; }
     .footer-grid { gap: 28px; }
