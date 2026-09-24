@@ -21,6 +21,12 @@ $navbar-light-active-color: #a93616;
 $navbar-light-brand-color: $body-color;
 $navbar-light-brand-hover-color: $body-color;
 
+// Knapper
+$btn-padding-y: 12px;
+$btn-padding-x: 22px;
+$btn-font-size: 14px;
+$btn-font-weight: 700;
+
 @import "bootstrap/scss/bootstrap";
 
 $header-bg: #f7f4ee;
@@ -114,4 +120,79 @@ h1, h2, h3 {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   font-weight: 400;
+}
+// Hero
+.hero {
+  background: #CDB397;
+  padding-block: 36px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374133;
+  margin-bottom: 16px;
+
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #3f6549;
+    flex-shrink: 0;
+  }
+}
+
+.hero-name {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.14;
+
+  .accent {
+    display: block;
+    color: #a93616;
+  }
+}
+
+.hero-role {
+  font-size: 23px;
+  margin: 10px 0 0;
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: #42413c;
+  max-width: 46ch;
+  margin-top: 18px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  border: 1px solid #a68d75;
+  border-radius: 4px;
+
+  .swatch {
+    width: 9px; height: 9px;
+    border-radius: 50%;
+  }
+}
+
+.btn {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-ghost {
+  border: 1px solid #847361;
+  color: $body-color;
+
+  &:hover { background: #f7f4ee; }
 }
