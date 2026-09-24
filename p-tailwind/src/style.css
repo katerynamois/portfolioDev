@@ -1,2 +1,21 @@
 @import "tailwindcss";
 
+
+@theme {
+  /* Farver */
+  --color-ink: #14213D;
+  --color-cream: #F6EEE1;
+  --color-header: #f7f4ee;
+  --color-tan: #CDB397;
+  --color-accent: #a93616;
+  --color-stripe: #E8622C;
+  --color-muted: #50545a;
+  --color-line: rgba(20, 33, 61, 0.14);
+
+  /* Fonte */
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Anton', sans-serif;
+
+  /* Breakpoint som originalen */
+  --breakpoint-md: 861px;
+}
