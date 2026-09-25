@@ -10,8 +10,30 @@
     <title>p-bulma</title>
   </head>
   <body>
-  <h1 class="title is-1 has-text-primary">Bulma virker</h1>
-  <button class="button is-primary">Test</button>
+  <header class="site-header">
+  <nav class="navbar" aria-label="Hovednavigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item brand" href="#"><span class="iris" aria-hidden="true"></span> Kateryna</a>
+        <button class="navbar-burger" id="burgerBtn" type="button"
+                aria-label="Åbn menu" aria-expanded="false" aria-controls="mainNav">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="navbar-menu" id="mainNav">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#projekter">Projekter</a>
+          <a class="navbar-item" href="#om">Om mig</a>
+          <a class="navbar-item" href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
   <script type="module" src="/src/main.js"></script>
 </body>
 

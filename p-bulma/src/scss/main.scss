@@ -5,5 +5,62 @@
     $radius: 4px,
     $body-background-color: #F6EEE1,
     $navbar-background-color: #f7f4ee,
-    $navbar-breakpoint: 861px
+    $navbar-breakpoint: 861px,
+    $navbar-height: 4.625rem,
+    $navbar-burger-color: #14213D
+
 );
+
+$header-bg: #f7f4ee;
+
+.container {
+  max-width: 1244px;
+  padding-inline: 32px;
+  @media (max-width: 600px) { padding-inline: 20px; }
+}
+
+.site-header {
+  position: sticky; top: 0; z-index: 30;
+  border-top: 6px solid #E8622C;
+  border-bottom: 1px solid rgba(20, 33, 61, 0.14);
+}
+
+.brand {
+  gap: 12px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #14213D;
+  padding-left: 0;
+}
+
+.iris {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #E8622C;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute; inset: 8px;
+    border-radius: 50%;
+    background: $header-bg;
+  }
+}
+
+.navbar-end .navbar-item {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #50545a;
+  &:hover { color: #a93616; background: transparent; }
+}
+
+.navbar-burger {
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #1165a0;
+    outline-offset: 5px;
+  }
+}
