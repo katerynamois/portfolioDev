@@ -123,6 +123,65 @@ $header-bg: #f7f4ee;
 
 .portrait img { width: 100%; max-height: 460px; object-fit: contain; }
 
+
+// Projekter
+.projects { background: #fff; padding: 64px 0 88px; }
+
+.section-head { align-items: flex-end; margin-bottom: 36px; }
+.section-title { font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 38px; }
+.section-intro { max-width: 39ch; color: #50545a; font-size: 15px; }
+
+.case {
+  border: 1px solid #d8d8d3;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 28px !important;
+  &:last-child { margin-bottom: 0 !important; }
+}
+
+.case-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-height: 325px;
+  padding: 28px 36px !important;
+}
+
+.case-tag { font-size: 12px; font-weight: 700; }
+.case-name { font-family: 'Anton', sans-serif; font-size: 62px; line-height: 1.08; }
+.case-num { position: absolute; right: 28px; bottom: 24px; font-family: 'Anton', sans-serif; font-size: 32px; opacity: .75; }
+
+.case1 .case-visual { background: #d9ebf6; color: #1b4666; .case-num { color: #286d9b; } }
+.case2 .case-visual { background: #e2ecd5; color: #365332; .case-num { color: #4b6b3c; } }
+.case3 .case-visual { background: #f7d4c9; color: #752e20; .case-num { color: #a43824; } }
+
+.case-body {
+  padding: 36px 40px !important;
+  color: #14213D;
+  h3 { font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 28px; margin-bottom: 12px; }
+  p { color: #50545a; font-size: 15px; margin-bottom: 20px; }
+  .role { font-size: 13px; margin-bottom: 16px; }
+  .tags { margin-bottom: 16px; }
+}
+
+.tag.stack {
+  font-size: 11px;
+  color: #14213D;
+  background: transparent;
+  border: 1px solid rgba(20, 33, 61, 0.14);
+  border-radius: 4px;
+}
+
+.case-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #14213D;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  &:hover { color: #a93616; }
+}
+
 // Mobil (under 769px): lille portræt oppe i højre hjørne
 @include mx.mobile {
   .hero-intro .columns { position: relative; }
@@ -131,4 +190,10 @@ $header-bg: #f7f4ee;
   .hero-title { font-size: 42px; }
   .hero-role { font-size: 18px; }
   .hero-sub { font-size: 14px; }
+  .projects { padding: 40px 0 48px; }
+  .section-title { font-size: 30px; }
+  .case-visual { min-height: 232px; padding: 24px !important; }
+  .case-name { font-size: 46px; }
+  .case-body { padding: 26px 24px !important; }
+
 }
