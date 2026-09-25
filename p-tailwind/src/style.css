@@ -49,3 +49,16 @@
     @apply text-sm font-semibold border-b border-current pb-0.5 hover:text-accent;
   }
 }
+
+  .fact {
+    @apply flex justify-between gap-4 py-3 border-b border-[#e6eef3];
+  }
+  .skill-title {
+    @apply font-sans text-[13px] font-bold tracking-[0.08em] uppercase text-[#286d9b] mb-1.5;
+  }
+  .footer-link {
+    @apply py-2 border-b border-current hover:text-accent;
+  }
+
+  html { scroll-padding-top: 96px; }
+
