@@ -1,0 +1,9 @@
+@use "bulma/sass" with (
+    $primary: #14213D,
+    $text: #14213d,
+    $family-primary: "'DM Sans', sans-serif",
+    $radius: 4px,
+    $body-background-color: #F6EEE1,
+    $navbar-background-color: #f7f4ee,
+    $navbar-breakpoint: 861px
+);
