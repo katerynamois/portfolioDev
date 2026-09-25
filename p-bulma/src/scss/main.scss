@@ -145,8 +145,11 @@ $header-bg: #f7f4ee;
   flex-direction: column;
   gap: 22px;
   min-height: 325px;
-  padding: 28px 36px !important;
 }
+
+// Skal være mere specifik end Bulmas ".columns.is-gapless > .column { padding: 0 !important }"
+.case.is-gapless > .column.case-visual { padding: 28px 36px !important; }
+.case.is-gapless > .column.case-body { padding: 36px 40px !important; }
 
 .case-tag { font-size: 12px; font-weight: 700; }
 .case-name { font-family: 'Anton', sans-serif; font-size: 62px; line-height: 1.08; }
@@ -157,7 +160,6 @@ $header-bg: #f7f4ee;
 .case3 .case-visual { background: #f7d4c9; color: #752e20; .case-num { color: #a43824; } }
 
 .case-body {
-  padding: 36px 40px !important;
   color: #14213D;
   h3 { font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 28px; margin-bottom: 12px; }
   p { color: #50545a; font-size: 15px; margin-bottom: 20px; }
@@ -192,8 +194,9 @@ $header-bg: #f7f4ee;
   .hero-sub { font-size: 14px; }
   .projects { padding: 40px 0 48px; }
   .section-title { font-size: 30px; }
-  .case-visual { min-height: 232px; padding: 24px !important; }
+  .case-visual { min-height: 232px; }
+  .case.is-gapless > .column.case-visual { padding: 24px !important; }
   .case-name { font-size: 46px; }
-  .case-body { padding: 26px 24px !important; }
+  .case.is-gapless > .column.case-body { padding: 26px 24px !important; }
 
 }
