@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* Farver */
+  --color-ink: #14213D;
+  --color-cream: #F6EEE1;
+  --color-header: #f7f4ee;
+  --color-tan: #CDB397;
+  --color-accent: #a93616;
+  --color-stripe: #E8622C;
+  --color-muted: #50545a;
+  --color-line: rgba(20, 33, 61, 0.14);
+
+  /* Fonte */
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Anton', sans-serif;
+
+  /* Breakpoint som originalen */
+  --breakpoint-md: 861px;
+}
+
+@layer components {
+  .chip {
+    @apply flex items-center gap-2 px-3 py-1.5 text-xs border border-[#a68d75] rounded;
+  }
+  .btn {
+    @apply inline-flex items-center min-h-12 px-[22px] rounded text-sm font-bold transition hover:-translate-y-0.5;
+  }
+  .case {
+    @apply grid border border-[#d8d8d3] rounded-lg overflow-hidden mb-7;
+  }
+  .case-visual {
+    @apply relative flex flex-col gap-[22px] min-h-[232px] sm:min-h-[325px] p-6 md:px-9 md:py-7;
+  }
+  .case-name {
+    @apply font-display text-[46px] sm:text-[52px] md:text-[62px] leading-[1.08];
+  }
+  .case-num {
+    @apply absolute right-7 bottom-6 font-display text-[32px] opacity-75;
+  }
+  .case-body {
+    @apply bg-white p-6 md:px-10 md:py-9;
+  }
+  .stack {
+    @apply text-[11px] px-3 py-[5px] border border-line rounded;
+  }
+  .case-link {
+    @apply text-sm font-semibold border-b border-current pb-0.5 hover:text-accent;
+  }
+}
+
+  .fact {
+    @apply flex justify-between gap-4 py-3 border-b border-[#e6eef3];
+  }
+  .skill-title {
+    @apply font-sans text-[13px] font-bold tracking-[0.08em] uppercase text-[#286d9b] mb-1.5;
+  }
+  .footer-link {
+    @apply py-2 border-b border-current hover:text-accent;
+  }
+
+  html { scroll-padding-top: 96px; }
+
