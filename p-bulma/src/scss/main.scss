@@ -184,6 +184,83 @@ $header-bg: #f7f4ee;
   &:hover { color: #a93616; }
 }
 
+html { scroll-padding-top: 96px; }
+
+// Om mig
+.about {
+  background: #d9ebf6;
+  border-block: 1px solid #c2d8e6;
+  padding: 88px 0;
+  color: #3e5363;
+}
+
+.about-text p { font-size: 15px; max-width: 58ch; margin-bottom: 16px; }
+.about-text .about-eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #286d9b; margin-bottom: 14px; }
+.about-title { font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 44px; line-height: 1.05; color: #1b4666; margin-bottom: 28px; }
+.about-text .about-lead { font-size: 19px; line-height: 1.5; color: #1b4666; }
+.about-text .about-personal { margin-top: 24px; padding-top: 20px; border-top: 1px solid #aac9da; font-style: italic; }
+
+.card.about-card {
+  border: 1px solid #c2d8e6;
+  border-radius: 8px;
+  box-shadow: none;
+  color: #14213D;
+  .card-content { padding: 32px 32px 8px; }
+}
+
+.about-facts div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 12px;
+  border-bottom: 1px solid #e6eef3;
+  font-size: 14px;
+  dt { color: #50545a; }
+  dd { font-weight: 700; text-align: right; }
+}
+
+.skills > div {
+  padding-block: 20px;
+  border-top: 1px solid #e6eef3;
+  &:first-child { border-top: none; }
+  h3 { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #286d9b; margin-bottom: 6px; }
+  p { font-size: 15px; }
+}
+
+// Kontakt
+.footer.site-footer {
+  background: #f3b5a0;
+  padding: 64px 0 28px;
+  color: #14213D;
+}
+
+.footer-top { align-items: flex-end; }
+.footer-title { font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 40px; max-width: 19ch; }
+
+.footer-links {
+  gap: 24px;
+  a {
+    font-weight: 600;
+    color: #14213D;
+    padding-block: 8px;
+    border-bottom: 1px solid currentColor;
+    &:hover { color: #a93616; }
+  }
+}
+
+.fineprint {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(20, 33, 61, 0.14);
+  font-size: 12px;
+  color: #493f3d;
+  a { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
+}
+
 // Mobil (under 769px): lille portræt oppe i højre hjørne
 @include mx.mobile {
   .hero-intro .columns { position: relative; }
@@ -198,5 +275,12 @@ $header-bg: #f7f4ee;
   .case.is-gapless > .column.case-visual { padding: 24px !important; }
   .case-name { font-size: 46px; }
   .case.is-gapless > .column.case-body { padding: 26px 24px !important; }
+    .about { padding: 48px 0; }
+  .about-title { font-size: 30px; }
+  .card.about-card .card-content { padding: 24px 20px 4px; }
+  .footer.site-footer { padding: 44px 0 24px; }
+  .footer-title { font-size: 34px; margin-bottom: 20px; }
+  .footer-links { justify-content: flex-start; }
+
 
 }
